@@ -1,0 +1,44 @@
+/*
+ThemeWaves Responsive CSS
+*/
+@media (max-width: 1199px) {
+}
+@media (max-width: 1024px) and (min-width: 959px) {
+}
+
+/* Affects device widths of 959px and smaller. */
+@media (max-width: 959px) {
+}
+@media (max-width: 768px) and (min-width: 639px) {
+}
+@media (max-width: 639px) {
+    .form,
+    .container .img-1,
+    video,
+    img,
+    .container .img-3 {
+        width: 100%;
+        height: auto;
+    }
+    .footer-container,
+    .container {
+        display: block;
+    }
+}
+/* Affects device widths of 639px and smaller. */
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 360px) {
+    .area h1 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .area h2 {
+        font-size: 16px;
+    }
+    .area h3 {
+        font-size: 14px;
+    }
+}
