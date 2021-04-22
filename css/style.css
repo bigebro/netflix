@@ -36,6 +36,7 @@ body {
   margin: 19px 50px;
   text-decoration: none;
   font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 15.8px;
 }
 
 .logo img {
@@ -68,35 +69,42 @@ body {
 .area h3 {
     font-weight: normal;
     margin-top:25px;
-    font-size:20px;
+    font-size:19.45px;
 }
 
 .form {  
     height: 55px;
     width: 692px;
    display: flex;
+   justify-content: center;
+
 }
 
-.box {
-    width: 66.8%;
-    height: 55px;
+.box { 
+    margin-right: 20px;
+    margin-top:0.1562px;
+    width: 70%;
+    height: 54.6px;
+    border: 1.5px solid grey;
     }
 
 .get {
+    margin-top: -0.857px;
     display: inline-flex;
-    height:60px;
-    width: 33.7%;
+    height:59.78px;
+    width: 30.5%;
     background-color: #e50914;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 0.375px;
-    font-size: 28px;
+    font-size: 26px;
+    border: 1.1px solid black;
+    margin-left:-20px;
 }
 .arrow {
-    height: 19px;
-    margin-top: 2.9px;
+    height: 22px;
+    margin-top: 3.2px;
     margin-left:10.4px;
+    margin-left:2px
 }
 
 ::placeholder {
@@ -105,6 +113,7 @@ body {
     font-size: 15.6px;
     text-shadow: 0.1px 0 currentColor;
     letter-spacing: 0.5px;
+    padding-left: 9px;
  }
 
 .container {
@@ -167,29 +176,88 @@ body {
  }
 
  .question {
-     height:950px;
-    
- }
+     height:1050px;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+    }
 
 
-.question h1 {
+  .question h1 {
     color:white;
+    font-size: 51px;
+    margin-bottom: 41px;
 }
 
-.qt {
+ .qt {
     display: flex;
-    height: 75px;
+    height: 86px;
+    width: 68%;
     color:white;
     background-color: #303030;
+    align-items: center;
+    margin-top: 9px;
+    justify-content: space-between;
+    padding-right:30px;
 }
 
-.qt .textbox {
-    font-size: 25px;
-    display:flex;
-    text-align: left;
+ .qt .textbox {
+    font-size: 26px;
+    margin-left:32px;
 }
 
-.plus {
-   height: 0px;
-}
+ .plus {
+   height: 50px;
+   width: 50px;
+   font-weight: 300;
+ }
 
+ .qt img {
+          width: 26px;
+          height: 26px;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ5MiwyMzZIMjc2VjIwYzAtMTEuMDQ2LTguOTU0LTIwLTIwLTIwYy0xMS4wNDYsMC0yMCw4Ljk1NC0yMCwyMHYyMTZIMjBjLTExLjA0NiwwLTIwLDguOTU0LTIwLDIwczguOTU0LDIwLDIwLDIwaDIxNiAgICB2MjE2YzAsMTEuMDQ2LDguOTU0LDIwLDIwLDIwczIwLTguOTU0LDIwLTIwVjI3NmgyMTZjMTEuMDQ2LDAsMjAtOC45NTQsMjAtMjBDNTEyLDI0NC45NTQsNTAzLjA0NiwyMzYsNDkyLDIzNnoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+)
+        }
+
+  .footer {
+      height: 275px; 
+  }
+
+    .footer-container {
+        display: flex;
+     
+        
+    }
+
+    .flex p{
+        font-size: 17px;
+        margin-left:129px;
+        margin-bottom: -1px;
+    
+      }
+
+    .footer .flex {
+        color:#999;
+      }
+
+      .list li {
+        margin-left: 88px;
+        margin-top: 20px;
+
+      
+        
+      }
+      
+      li a {
+          text-align: center;
+          color: #999;
+          text-decoration: none;
+          font-size: 14px;
+         
+      }
+
+      .end p {
+          color:#999;
+          font-size:14px;
+          
+      }
