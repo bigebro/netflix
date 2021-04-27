@@ -14,14 +14,22 @@ body {
 
 .main {
     color: white;
-    margin: -129px 0 -15px;
+    margin: -129px 0 0;
     height: 724px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0.9, 0.2, 0.5, 0.87), rgba(0.2, 0.2, 0.2, 0.4), rgba(0.6, 2.6, 2.6, 0.9)), url("../images/MN-en-20210322-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.story-board {
+    padding: 70px 0;
     border-bottom: 8px solid #222;
+}
+
+.story-board:first-child {
+    border-top: 8px solid #222;
 }
 
 .footer-form {
@@ -379,11 +387,6 @@ a.uk-accordion-title::before {
 }
 
 .card-animation-container {
-    height: 1%;
-    width: 44%;
-    margin-left: -108px;
-    margin-right: -130px;
-    margin-top: -22px;
 }
 
 .text-card {
