@@ -20,6 +20,7 @@ html {
     height: 724px;
     display: flex;
     text-align: center;
+    border-bottom: 8px solid #222;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0.9, 0.2, 0.5, 0.87), rgba(0.2, 0.2, 0.2, 0.4), rgba(0.6, 2.6, 2.6, 0.9)), url("../images/MN-en-20210322-popsignuptwoweeks-perspective_alpha_website_large.jpg");
@@ -34,7 +35,7 @@ html {
 }
 
 .story-board:first-child {
-    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
 }
 
 .footer-form {
@@ -223,7 +224,7 @@ form {
     flex-direction: column;
     width: 96%;
     align-items: center;
-    margin-left: 32px;
+    margin-left: -42px;
     margin-top: 62px;
 }
 
@@ -235,7 +236,7 @@ form {
 
 .flex a {
     display: flex;
-    margin-left: 15%;
+    margin-left: 20.5%;
     color: #757575;
 }
 
@@ -257,7 +258,7 @@ li a:hover {
 .end {
     display: flex;
     align-self: flex-start;
-    margin-left: 15%;
+    margin-left: 20.5%;
     font-size: 14px;
     color: #757575;
     margin-top: 16px;
@@ -958,13 +959,24 @@ only screen and (max-width: 349px) {
 
 .card-animation-container .image .img-2 {
     width: 100%;
-    max-width: 1600px;
+    max-width: 600px;
 }
 
 @media only screen and (max-width:949px) {
-    .uk-container .card-animation-container .image .img-2 {
-        width: 100%;
-        max-width: 1600px;
+    .uk-container .card-animation-container .image {
+        width: 140%;
+        max-width: 600px;
+        position: relative;
+        right: 50px;
+    }
+    .card-animation-image img {
+        width: 49px;
+    }
+    .card-animation-container .uk-card {
+        width: 390px;
+        height: 90px;
+        position: relative;
+        right: 29px;
     }
     .text-card {
         position: relative;
@@ -980,16 +992,181 @@ only screen and (max-width: 349px) {
         margin-left: -240px;
         font-size: 1.25rem;
         margin-top: -35px;
+        margin-bottom: 1px;
     }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
+@media only screen and (max-width: 922px) {
+    .text-card .text-2 {
+        margin-left: -405px;
+    }
+    .text-card .text-3 {
+        width: 800px;
+        margin-left: -330px;
+        font-size: 1.25rem;
+        margin-top: -35px;
+    }
+}
+
+@media only screen and (max-width:907px) {
+    .uk-container .card-animation-container .image {
+        width: 140%;
+        max-width: 600px;
+        position: relative;
+        right: 76px;
+    }
+    .card-animation-container .uk-card {
+        width: 390px;
+        height: 90px;
+        position: relative;
+        right: 49px;
+    }
+    .text-card {
+        position: relative;
+        left: -160px;
+    }
+}
+
+@media only screen and (max-width: 882px) {
     .uk-container .card-animation-container {
         width: 100%;
         max-width: 1600px;
         margin-top: 1em;
+        position: relative;
+    }
+    .text-card {
+        position: relative;
+        left: -140px;
+    }
+    .text-card .text-2 {
+        width: 800px;
+        margin-left: -380px;
+    }
+    .text-card .text-3 {
+        width: 800px;
+        margin-left: -310px;
+        margin-top: -35px;
+        margin-bottom: -50px;
+    }
+    .card-animation-container .uk-card {
+        width: 390px;
+        height: 90px;
+        position: relative;
+        right: 59px;
+    }
+}
+
+@media only screen and (max-width:878px) {
+    .text-card .text-2 {
+        margin-left: -410px;
+    }
+    .text-card .text-3 {
+        margin-left: -340px;
+        margin-top: -35px;
+        margin-bottom: -50px;
+    }
+}
+
+@media only screen and (max-width: 867px) {
+    .card-animation-container .uk-card {
+        width: 90%;
+        position: relative;
+        left: -40px;
+    }
+}
+
+@media only screen and (max-width:841px) {
+    .card-animation-container .uk-card {
+        position: relative;
+        right: 70px;
+    }
+}
+
+@media only screen and (max-width:811px) {
+    .text-card .text-2 {
+        width: 700px;
+        margin-left: -380px;
+    }
+    .text-card .text-3 {
+        width: 800px;
+        margin-left: -352px;
+        margin-top: -35px;
+        margin-bottom: -50px;
+    }
+}
+
+@media only screen and (max-width:681px) {
+    .text-card .text-2 {
+        width: 559px;
+        margin-left: -321px;
+    }
+}
+
+@media only screen and (max-width:666px) {
+    .text-card .text-3 {
+        width: 580px;
+        margin-left: -256px;
+    }
+}
+
+@media only screen and (max-width:588px) {
+    .text-card .text-3 {
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width:546px) {
+    .text-card .text-2 {
+        width: 450px;
+        font-size: 1.7rem;
+        margin-left: -152px;
+    }
+    .text-card .text-3 {
+        font-size: 1.2rem;
+        margin-left: -182px;
+    }
+}
+
+@media only screen and (max-width:548px) {
+    .text-card .text-2 {
+        width: 450px;
+        font-size: 1.7rem;
+        margin-left: -152px;
+    }
+    .text-card .text-3 {
+        font-size: 1.2rem;
+        margin-left: -182px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .text-card .text-2 {
+        width: 430px;
+        font-size: 1.7rem;
+        margin-left: -158px;
+    }
+    .text-card .text-3 {
+        width: 430px;
+        font-size: 1.1rem;
+        margin-left: -150px;
+    }
+    .uk-container .card-animation-container .image {
+        width: 183%;
+        max-width: 1600px;
+        position: relative;
+        right: 102px;
+    }
+    .card-animation-container .uk-card {
+        height: 22%;
+        margin-top: -76px;
+        width: 400px;
+        position: relative;
+        left: -42px;
+    }
+    .animation-text {
+        font-size: .8rem;
+        position: relative;
+        top: -6px;
+        right: 0px;
     }
 }
