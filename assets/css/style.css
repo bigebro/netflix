@@ -500,16 +500,47 @@ h2, h3, h4, h5 {
     outline-offset: -2px;
     display: block;
     background: url(../images/download-icon.gif) center center no-repeat;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100%;
     background-size: 100%;
     content: '';
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -moz-box-flex: 0;
-    -ms-flex-positive: 0;
     flex-grow: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
 }
+
+/*
+Анхаарах зүйлс::after
+1: Класс нэршил өмнөө prefix тэй байх ёстой. Энгийн нэр байж болохгүй. Хэт богино эсвэл хэт урт байж болохгүй.
+Буруу жишээ:
+.end .footer .flex
+Зөв жишээ:
+NetFlix Mongolia:  nfm -> prefix
+President.mn:   pm
+.nfm-end .nfm-footer .nfm-flex
+.pm-maincontainer .pm-responsive-img
+
+2: Framework гэдэг зүйлийн чухал зүйлсээ сайн ойлгоогүй байгаа. Getuikit
+Section
+Container
+Grid
+Width
+Flex
+Nav
+Navbar
+Position
+Slider
+Slideshow
+Tab Switcher
+Table
+Utility
+
+3: Left Right Width  140 117% huwiig hamaagui tawihgui
+Margin-left -140px hamaagui class tawihgui !
+
+4: http://shouldiprefix.com/ Background size yumuu Display flex ntr ted nariig -moz -webkit- shalgah site.
+
+5: HTML butetsee sain oilgoh heregtei
+.container 
+.uk-grid
+.uk-width
+Content
+
+*/
