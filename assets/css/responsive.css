@@ -29,9 +29,15 @@ ThemeWaves Responsive CSS
 }
 
 
-/* Affects device widths of 639px and smaller. */
+/* Affects device widths of 480px and larger. */
+@media (min-width: 480px) {
 
-@media (max-width: 480px) {}
+}
+/* Affects device widths of 480px and smaller. */
+
+@media (max-width: 480px) {
+
+}
 
 @media (max-width: 360px) {
     .area h1 {

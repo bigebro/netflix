@@ -11,7 +11,6 @@ html {
 
 .uk-container {
     max-width: 1100px;
-    padding: 0;
 }
 
 .main {
@@ -143,7 +142,7 @@ form {
     margin-top: 28px;
 }
 
- ::placeholder {
+::placeholder {
     filter: brightness(112%);
     font-size: 15.6px;
     filter: brightness(85%);
@@ -219,12 +218,7 @@ form {
 }
 
 .footer {
-    display: flex;
     height: 100%;
-    flex-direction: column;
-    width: 96%;
-    align-items: center;
-    margin-left: -42px;
     margin-top: 62px;
 }
 
@@ -235,14 +229,12 @@ form {
 }
 
 .flex a {
-    display: flex;
-    margin-left: 20.5%;
     color: #757575;
 }
 
 .list {
     list-style-type: none;
-    margin-left: 30px;
+    padding-left: 0;
 }
 
 li a {
@@ -256,9 +248,6 @@ li a:hover {
 }
 
 .end {
-    display: flex;
-    align-self: flex-start;
-    margin-left: 20.5%;
     font-size: 14px;
     color: #757575;
     margin-top: 16px;
@@ -353,12 +342,6 @@ a.uk-accordion-title::before {
 
 .img-2 {
     width: 100%;
-    height: 20%;
-}
-
-.text-card {
-    display: flex;
-    margin-left: -150px;
 }
 
 hr.line {
@@ -367,77 +350,7 @@ hr.line {
     width: 99.4%;
 }
 
-.animation-card .uk-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-}
-
-.uk-container .text-card {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container .text-card {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-flow: column;
-    }
-}
-
-
-/* .uk-container .text {
-    width: 52%;
-    height: 100%;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    padding: 0 3rem 0 0;
-    z-index: 3;
-} */
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container .text-card .text {
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-    .text-3,
-    .text {
-        font-size: 1.25rem;
-    }
-}
-
-.uk-container .uk-width-1-2 {
-    width: 48%;
-    height: 100%;
-    display: flex;
-    -webkit-box-flex: 0;
-    flex: 0 1 auto;
-    box-sizing: border-box;
-}
-
 .uk-container .card-animation-container {
-    margin: -8% 0 -4% -15%;
     min-height: 100px;
     width: 100%;
 }
@@ -457,10 +370,6 @@ only screen and (max-width: 349px) {
     overflow: hidden;
 }
 
-.animation-card .uk-width-1-2 {
-    display: flex;
-}
-
 .animation-card.watchtv .img-1 {
     position: relative;
     z-index: 2;
@@ -469,9 +378,6 @@ only screen and (max-width: 349px) {
 img {
     max-width: 100%;
     height: auto;
-    border: 0;
-    padding: 0px;
-    margin-top: -3px;
 }
 
 .animation-card.watchtv .video-1 {
@@ -496,35 +402,6 @@ img {
     transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card .uk-container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-    }
-    .animation-card .uk-width-1-2 {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 797px) {
-    .animation-card .img-video {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 810px) and (min-width: 550px) {
-    .animation-card .board-card-subtitle {
-        width: 85%;
-        align-content: center;
-        text-align: center;
-        padding-left: 60px;
-    }
-}
-
 .animation-card .tv {
     width: 100%;
 }
@@ -532,114 +409,6 @@ only screen and (max-width: 349px) {
 .animation-card {
     padding-top: 40px;
     padding-bottom: 30px;
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card.watchtv .text {
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card .text {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container .text {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-}
-
-
-/* 
-.uk-container .text {
-    width: 52%;
-    height: 100%;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    padding: 0 3rem 0 0;
-    z-index: 3;
-} */
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 950px) and (max-width: 1449px),
-only screen and (min-width: 1450px) {
-    .animation-card {
-        padding-top: 70px;
-        padding-bottom: 70px;
-        padding-left: 30px;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card .tv {
-        width: 100%;
-        max-width: 600px;
-        margin-top: 1em;
-        margin-right: 50px;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card.watchtv .tv {
-        margin: -8% 0 0 102px;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card.watchtv .tv {
-        margin-right: 90px;
-    }
-}
-
-@media only screen and (max-width: 546px) {
-    .animation-card .text .board-card-title {
-        font-size: 1.6rem;
-        margin-right: 40px;
-    }
-}
-
-@media only screen and (max-width: 546px) {
-    .animation-card .uk-width-1-2 .tv {
-        display: flex;
-        width: 430px;
-        margin-left: 60px;
-    }
-}
-
-@media only screen and (max-width: 546px) {
-    .animation-card .text .board-card-subtitle {
-        font-size: 1.1rem;
-        width: 81%;
-        margin-left: 38px;
-    }
 }
 
 .animation-card.watchtv .img-1 {
@@ -652,209 +421,13 @@ only screen and (max-width: 349px) {
     height: 100%;
 }
 
-
-/* @media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-.animation-card.watchOnTv .text {
-margin: 0;
-}
-} */
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .animation-card .text {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-}
-
-.animation-card .text {
-    height: 100%;
-    -webkit-box-flex: 0;
-    flex: 0 1 auto;
-    z-index: 3;
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-    .text.board-card-subtitle,
-    .text {
-        font-size: 1.25rem;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-    .text .board-card-title {
-        font-size: 2.5rem;
-    }
-}
-
-h1 {
-    margin: 0 0 .4em;
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-    .text .board-card-subtitle,
-    .text {
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-    .text .board-card-subtitle1,
-    .text {
-        font-size: 1.2rem;
-    }
-}
-
-h2,
-h3,
-h4,
-h5 {
+h2, h3, h4, h5 {
     margin: .75em 0 .25em;
 }
 
 .uk-card {
     display: flex;
     flex-direction: row;
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container .text-card {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        width: 110%;
-        margin-left: 149px;
-    }
-}
-
-.uk-container .text-card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-flow: row-reverse;
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px),
-only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container .text-card {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-flow: column;
-        -moz-box-orient: vertical;
-        -moz-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
-    }
-}
-
-@media only screen and (max-width: 1199px) {
-    .uk-card .card-animation-image {
-        width: 20%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-@media only screen and (max-width: 1106px) {
-    .uk-card .card-animation-image {
-        width: 20%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-@media only screen and (max-width: 1097px) {
-    .uk-card .card-animation-image {
-        width: 20%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-@media only screen and (max-width: 1061px) {
-    .uk-card .card-animation-image {
-        width: 20%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-@media only screen and (max-width: 1044px) {
-    .uk-card .card-animation-image {
-        width: 20%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-@media only screen and (max-width: 1017px) {
-    .uk-card .card-animation-image {
-        width: 22%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-@media only screen and (max-width: 995px) {
-    .uk-card .card-animation-image {
-        width: 23%;
-        margin-top: -17px;
-        margin-left: -17px;
-    }
-    .animation-text {
-        margin-top: -9px;
-    }
-}
-
-
-/* @media only screen and (min-width: 950px) and (max-width: 1449px),
-only screen and (min-width: 1450px) {
-    .uk-container .uk-width-1-2 {
-        padding: .5em .75em;
-    }
-} */
-
-@media only screen and (min-width: 550px) and (max-width: 923px) {
-    .uk-container .text-2 {
-        font-size: 1.5rem;
-        padding-left: 154px;
-        width: 140%;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 923px) {
-    .uk-container .text-3 {
-        padding-left: 75px;
-        width: 130%;
-    }
 }
 
 .text-board .board-card-subtitle {
@@ -866,74 +439,14 @@ only screen and (min-width: 1450px) {
     font-size: 1.6rem;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container-small {
-        padding: 50px 0;
-    }
-}
-
 .uk-container-small h1 {
     font-size: 3.125rem;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container-small a {
-        font-size: 1.625rem;
-    }
-    .uk-container-small p {
-        font-size: 1.625rem;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 948px) {
-    .uk-container-small h1 {
-        font-size: 2.5rem;
-    }
-    .uk-container-small ul {
-        margin-left: -90px;
-        margin-right: -90px;
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container-small h1 {
-        font-size: 1.625rem;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-    .uk-container-small a {
-        font-size: 1.25rem;
-    }
-    .uk-container-small p {
-        font-size: 1.25rem;
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 549px),
-only screen and (min-width: 350px) and (max-width: 399px),
-only screen and (max-width: 349px) {
-    .uk-container a {
-        font-size: 1.125rem;
-    }
-    .uk-container p {
-        font-size: 1.125rem;
-    }
-}
-
 .uk-container-small {
-    margin-bottom: 1px;
     font-weight: 400;
     position: relative;
-    width: 61%;
     border: 0;
-    max-width: 2815px;
 }
 
 .uk-container-small h1 {
@@ -941,15 +454,6 @@ only screen and (max-width: 349px) {
     font-weight: 700;
     text-align: center;
     margin-top: 54px;
-}
-
-@media only screen and (max-width: 548px) {
-    .uk-container-small {
-        width: 100%;
-    }
-    .uk-container-small h1 {
-        font-size: 1.8rem;
-    }
 }
 
 .uk-container-small a {
@@ -962,211 +466,50 @@ only screen and (max-width: 349px) {
     max-width: 600px;
 }
 
-@media only screen and (max-width:949px) {
-    .uk-container .card-animation-container .image {
-        width: 140%;
-        max-width: 600px;
-        position: relative;
-        right: 50px;
-    }
-    .card-animation-image img {
-        width: 49px;
-    }
-    .card-animation-container .uk-card {
-        width: 390px;
-        height: 90px;
-        position: relative;
-        right: 29px;
-    }
-    .text-card {
-        position: relative;
-        left: -140px;
-    }
-    .text-card .text-2 {
-        width: 800px;
-        margin-left: -240px;
-        font-size: 2.5rem;
-    }
-    .text-card .text-3 {
-        width: 800px;
-        margin-left: -240px;
-        font-size: 1.25rem;
-        margin-top: -35px;
-        margin-bottom: 1px;
-    }
+.our-story-card-animation {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: #000;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    padding: .25em .65em;
+    border: 2px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 2em 0 #000;
+    border-radius: .75em;
 }
 
-@media only screen and (max-width: 922px) {
-    .text-card .text-2 {
-        margin-left: -405px;
-    }
-    .text-card .text-3 {
-        width: 800px;
-        margin-left: -330px;
-        font-size: 1.25rem;
-        margin-top: -35px;
-    }
+.our-story-card-animation .our-story-card-animation-image img {
+    height: 3em;
+    width: auto;
+    margin: 0 1em 0 0;
 }
 
-@media only screen and (max-width:907px) {
-    .uk-container .card-animation-container .image {
-        width: 140%;
-        max-width: 600px;
-        position: relative;
-        right: 76px;
-    }
-    .card-animation-container .uk-card {
-        width: 390px;
-        height: 90px;
-        position: relative;
-        right: 49px;
-    }
-    .text-card {
-        position: relative;
-        left: -160px;
-    }
+.our-story-card-animation-text {
+    flex-grow: 1;
 }
 
-@media only screen and (max-width: 882px) {
-    .uk-container .card-animation-container {
-        width: 100%;
-        max-width: 1600px;
-        margin-top: 1em;
-        position: relative;
-    }
-    .text-card {
-        position: relative;
-        left: -140px;
-    }
-    .text-card .text-2 {
-        width: 800px;
-        margin-left: -380px;
-    }
-    .text-card .text-3 {
-        width: 800px;
-        margin-left: -310px;
-        margin-top: -35px;
-        margin-bottom: -50px;
-    }
-    .card-animation-container .uk-card {
-        width: 390px;
-        height: 90px;
-        position: relative;
-        right: 59px;
-    }
-}
-
-@media only screen and (max-width:878px) {
-    .text-card .text-2 {
-        margin-left: -410px;
-    }
-    .text-card .text-3 {
-        margin-left: -340px;
-        margin-top: -35px;
-        margin-bottom: -50px;
-    }
-}
-
-@media only screen and (max-width: 867px) {
-    .card-animation-container .uk-card {
-        width: 90%;
-        position: relative;
-        left: -40px;
-    }
-}
-
-@media only screen and (max-width:841px) {
-    .card-animation-container .uk-card {
-        position: relative;
-        right: 70px;
-    }
-}
-
-@media only screen and (max-width:811px) {
-    .text-card .text-2 {
-        width: 700px;
-        margin-left: -380px;
-    }
-    .text-card .text-3 {
-        width: 800px;
-        margin-left: -352px;
-        margin-top: -35px;
-        margin-bottom: -50px;
-    }
-}
-
-@media only screen and (max-width:681px) {
-    .text-card .text-2 {
-        width: 559px;
-        margin-left: -321px;
-    }
-}
-
-@media only screen and (max-width:666px) {
-    .text-card .text-3 {
-        width: 580px;
-        margin-left: -256px;
-    }
-}
-
-@media only screen and (max-width:588px) {
-    .text-card .text-3 {
-        width: 520px;
-    }
-}
-
-@media only screen and (max-width:546px) {
-    .text-card .text-2 {
-        width: 450px;
-        font-size: 1.7rem;
-        margin-left: -152px;
-    }
-    .text-card .text-3 {
-        font-size: 1.2rem;
-        margin-left: -182px;
-    }
-}
-
-@media only screen and (max-width:548px) {
-    .text-card .text-2 {
-        width: 450px;
-        font-size: 1.7rem;
-        margin-left: -152px;
-    }
-    .text-card .text-3 {
-        font-size: 1.2rem;
-        margin-left: -182px;
-    }
-}
-
-@media only screen and (max-width:500px) {
-    .text-card .text-2 {
-        width: 430px;
-        font-size: 1.7rem;
-        margin-left: -158px;
-    }
-    .text-card .text-3 {
-        width: 430px;
-        font-size: 1.1rem;
-        margin-left: -150px;
-    }
-    .uk-container .card-animation-container .image {
-        width: 183%;
-        max-width: 1600px;
-        position: relative;
-        right: 102px;
-    }
-    .card-animation-container .uk-card {
-        height: 22%;
-        margin-top: -76px;
-        width: 400px;
-        position: relative;
-        left: -42px;
-    }
-    .animation-text {
-        font-size: .8rem;
-        position: relative;
-        top: -6px;
-        right: 0px;
-    }
+.our-story-card-animation:after {
+    width: 3em;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    display: block;
+    background: url(../images/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
 }
