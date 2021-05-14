@@ -1,19 +1,49 @@
-function Paragraph(props) {
-  return <p>{props.text}</p>;
+class Chosen extends React.Component {
+  componentDidMount() {
+    this.$el = $(this.el);
+    this.$el.chosen();
+
+    this.handleChange = this.handleChange.bind(this);
+    this.$el.on('change', this.handleChange);
+  }
+  
+  componentDidUpdate(prevProps) {
+    if (prevProps.children !== this.props.children) {
+      this.$el.trigger("chosen:updated");
+    }
+  }
+
+  componentWillUnmount() {
+    this.$el.off('change', this.handleChange);
+    this.$el.chosen('destroy');
+  }
+  
+  handleChange(e) {
+    this.props.onChange(e.target.value);
+  }
+
+  render() {
+    return (
+      <div>
+        <select className="Chosen-select" ref={el => this.el = el}>
+          {this.props.children}
+        </select>
+      </div>
+    );
+  }
 }
 
-const ParagraphView = Backbone.View.extend({
-  render() {
-    const text = this.model.get('text');
-    ReactDOM.render(<Paragraph text={text} />, this.el);
-    return this;
-  },
-  remove() {
-    ReactDOM.unmountComponentAtNode(this.el);
-    Backbone.View.prototype.remove.call(this);
-  }
-});
+function Example() {
+  return (
+    <Chosen onChange={value => console.log(value)}>
+      <option>vanilla</option>
+      <option>chocolate</option>
+      <option>strawberry</option>
+    </Chosen>
+  );
+}
 
-const model = new Backbone.Model({ text: 'React works with Backbone!' });
-const view = new ParagraphView({ model, el: "#app" });
-view.render();
+ReactDOM.render(
+  <Example />,
+  document.getElementById('root')
+);
